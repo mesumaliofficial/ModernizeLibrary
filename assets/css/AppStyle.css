@@ -1,0 +1,136 @@
+.st-emotion-cache-t1wise {
+    padding: 1rem 1rem 3rem !important; 
+}
+
+[data-testid="stVerticalBlock"] {
+    padding: 1rem;
+}
+
+[data-testid="stSidebarNavLink"] {
+    display: none;
+}
+
+.st-emotion-cache-1dp5vir {
+    background-image: none !important;
+}
+
+[data-testid="stSidebar"] {
+    width: 270px !important;
+    min-width: 270px !important;
+    max-width: 270px !important;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar Logo */
+.stImage img {
+    top: 22px;
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.st-emotion-cache-qyr5vx {
+    background: transparent;
+}
+.st-emotion-cache-uzxc3z {
+    padding-top: 0 !important;
+}
+
+/* Sidebar Buttons */
+[data-testid="stBaseButton-secondary"] {
+    width: 100% !important;
+    display: block;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+}
+
+/* Sidebar Button Hover Effect */
+[data-testid="stBaseButton-secondary"]:hover {
+    background: rgba(20, 114, 255, 0.2);
+    transform: translateX(5px);
+}
+
+/* Active Button Highlight */
+[data-testid="stBaseButton-secondary"]:focus {
+    background: #7648f5 !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+.st-emotion-cache-mtjnbi {
+    padding: 3rem 0rem 1rem !important;
+}
+
+.cards {
+    margin: 15px 3px;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+.cards:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+.cards span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #636363;
+}
+.cards .totals {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+[data-testid="stDataFrameResizable"] {
+    display: none;
+}
+
+@media (min-width: calc(736px + 8rem)) {
+
+    .st-emotion-cache-t1wise {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.book-card {
+    margin: 20px 10px;
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-top: 5px solid #7648f5;
+    border-bottom: 5px solid #7648f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.book-info {
+    text-align: left;
+}
+
+.book-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.book-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.book-info .read-status {
+    font-style: italic;
+}
