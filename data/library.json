@@ -4,14 +4,16 @@
         "author": "Mesum Ali",
         "genre": "Fiction",
         "year": 2025,
-        "Read_Status": "Read"
+        "Read_Status": "Read",
+        "read_status": "Unread"
     },
     {
-        "title": "aksnka",
+        "title": "Harry porter",
         "author": "Mesum Ali",
-        "genre": "Fiction",
+        "genre": "Action",
         "year": 2025,
-        "Read_Status": "Unread"
+        "Read_Status": "Unread",
+        "read_status": "Unread"
     },
     {
         "title": "Peer e Kamil",
@@ -19,12 +21,5 @@
         "genre": "Fiction",
         "year": 2025,
         "Read_Status": "Read"
-    },
-    {
-        "title": "aksnka",
-        "author": "Mesum Ali",
-        "genre": "Fiction",
-        "year": 2025,
-        "Read_Status": "Unread"
     }
 ]

@@ -17,7 +17,7 @@ with st.sidebar:
     if st.button("Dashboard", use_container_width=True):
         st.session_state.current_page = 'dashboard'
     
-    if st.button("All Books", use_container_width=True):
+    if st.button("View Books", use_container_width=True):
         st.session_state.current_page = 'all_books'
 
     if st.button("Add Book", use_container_width=True):
