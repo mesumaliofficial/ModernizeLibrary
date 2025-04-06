@@ -1,25 +1,72 @@
 [
     {
-        "title": "Peer e Kamil",
-        "author": "Mesum Ali",
-        "genre": "Fiction",
-        "year": 2025,
-        "Read_Status": "Read",
-        "read_status": "Unread"
-    },
-    {
-        "title": "Harry porter",
-        "author": "Mesum Ali",
-        "genre": "Action",
-        "year": 2025,
-        "Read_Status": "Unread",
-        "read_status": "Unread"
-    },
-    {
-        "title": "Peer e Kamil",
-        "author": "Mesum Ali",
-        "genre": "Fiction",
-        "year": 2025,
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "genre": "Adventure",
+        "year": 1988,
         "Read_Status": "Read"
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Dystopian",
+        "year": 1949,
+        "Read_Status": "Unread"
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Classic",
+        "year": 1960,
+        "Read_Status": "Read"
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Literary Fiction",
+        "year": 1925,
+        "Read_Status": "Unread"
+    },
+    {
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "genre": "Adventure",
+        "year": 1851,
+        "Read_Status": "Unread"
+    },
+    {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "year": 1997,
+        "Read_Status": "Unread"
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "genre": "Realistic Fiction",
+        "year": 1951,
+        "Read_Status": "Read"
+    },
+    {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Romance",
+        "year": 1813,
+        "Read_Status": "Unread"
+    },
+    {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "year": 1937,
+        "Read_Status": "Read"
+    },
+    {
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "genre": "Science Fiction",
+        "year": 1932,
+        "Read_Status": "Unread"
     }
 ]

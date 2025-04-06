@@ -22,15 +22,10 @@ with st.sidebar:
 
     if st.button("Add Book", use_container_width=True):
         st.session_state.current_page = 'add_book'
-    
-    if st.button("Search", use_container_width=True):
-        st.session_state.current_page = 'search'
+
     
     if st.button("Analytics", use_container_width=True):
         st.session_state.current_page = 'analytics'
-    
-    if st.button("Recommendations", use_container_width=True):
-        st.session_state.current_page = 'recommendations'
     
     if st.button("Import/Export", use_container_width=True):
         st.session_state.current_page = 'import_export'
@@ -47,5 +42,13 @@ elif st.session_state.current_page == "add_book":
 elif st.session_state.current_page == "all_books":
     from pages.all_books import render_view_books
     render_view_books()
+
+elif st.session_state.current_page == "analytics":
+    from pages.analytics import render_analytics
+    render_analytics()
+
+elif st.session_state.current_page == "import_export":
+    from pages.import_export import render_import_export
+    render_import_export()
 
 load_css()

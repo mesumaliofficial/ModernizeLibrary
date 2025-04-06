@@ -1,8 +1,31 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
+import json
+import os
+
+library_file = "data/library.json"
+def load_library():
+    try:
+        with open(library_file, "r") as file:
+            return json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
 
 def render_dashboard():
+    library = load_library()
+
+    total_books = 0
+    read_books = 0
+    unread_books = 0
+
+    for book in library:
+        total_books += 1
+        if book["Read_Status"] == "Read":
+            read_books += 1
+        else: 
+            unread_books += 1
+
     # Cards showing totals
     col1, col2, col3, = st.columns(3)
 
@@ -10,25 +33,25 @@ def render_dashboard():
         st.markdown("""
         <div class="cards">
             <span>Total Books in Library</span>
-            <h1 class="totals">18</h1>
+            <h1 class="totals">{}</h1>
         </div>
-        """, unsafe_allow_html=True)
+        """.format(total_books), unsafe_allow_html=True)
 
     with col2:
         st.markdown("""
         <div class="cards">
             <span>Read Books in Library</span>
-            <h1 class="totals">4</h1>
+            <h1 class="totals">{}</h1>
         </div>
-        """, unsafe_allow_html=True)
+        """.format(read_books), unsafe_allow_html=True)
 
     with col3:
         st.markdown("""
         <div class="cards">
             <span>Unread Books in Library</span>
-            <h1 class="totals">14</h1>
+            <h1 class="totals">{}</h1>
         </div>
-        """, unsafe_allow_html=True)    
+        """.format(unread_books), unsafe_allow_html=True)    
 
         st.write("")
         st.write("")
