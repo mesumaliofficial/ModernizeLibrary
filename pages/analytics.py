@@ -20,8 +20,8 @@ def render_analytics():
         return
     df = pd.DataFrame(library)
 
-    if "Read_Status" not in df.columns:
-        df["Read_Status"] = "Unread"
+    if "read_status" not in df.columns:
+        df["read_status"] = "Unread"
 
     if "genre" in df.columns:
         genre_chart = alt.Chart(df).mark_bar().encode(
@@ -47,13 +47,13 @@ def render_analytics():
             st.altair_chart(author_chart)
 
     with col2:
-        read_counts = df["Read_Status"].value_counts().reset_index()
-        read_counts.columns = ["Read_Status", "Count"]
+        read_counts = df["read_status"].value_counts().reset_index()
+        read_counts.columns = ["read_status", "Count"]
 
         pie_chart = alt.Chart(read_counts).mark_arc().encode(
         theta=alt.Theta(field="Count", type="quantitative"),
-        color=alt.Color(field="Read_Status", type="nominal",
-            scale=alt.Scale(domain=read_counts["Read_Status"].tolist(),
+        color=alt.Color(field="read_status", type="nominal",
+            scale=alt.Scale(domain=read_counts["read_status"].tolist(),
             range=["#00B5E2", "#1E3A8A"]))
         ).properties(title="Books Read Status", width=400, height=400)
         st.altair_chart(pie_chart)

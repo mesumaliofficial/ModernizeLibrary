@@ -53,12 +53,11 @@ def render_view_books():
                     <p><strong>Author:</strong> {book.get("author", "Unknown")}</p>
                     <p><strong>Genre:</strong> {book.get("genre", "Not Available")}</p>
                     <p><strong>Year:</strong> {book.get("year", "Not Available")}</p>
-                    <p class="read-status"><strong>Read Status:</strong> {book.get("Read_Status", "Not Available")}</p>
+                    <p class="read-status"><strong>Read Status:</strong> {book.get("read_status", "Not Available")}</p>
                 </div>
             </div>
             """
             st.markdown(book_card, unsafe_allow_html=True)
-
             col1, col2 = st.columns(2)
 
             with col1:

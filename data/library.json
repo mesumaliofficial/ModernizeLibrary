@@ -1,72 +1,79 @@
 [
     {
-        "title": "The Alchemist",
-        "author": "Paulo Coelho",
-        "genre": "Adventure",
+        "title": "the alchemist",
+        "author": "paulo coelho",
+        "genre": "adventure",
         "year": 1988,
-        "Read_Status": "Read"
+        "read_status": "read"
     },
     {
         "title": "1984",
-        "author": "George Orwell",
-        "genre": "Dystopian",
+        "author": "george orwell",
+        "genre": "dystopian",
         "year": 1949,
-        "Read_Status": "Unread"
+        "read_status": "unread"
     },
     {
-        "title": "To Kill a Mockingbird",
-        "author": "Harper Lee",
-        "genre": "Classic",
+        "title": "to kill a mockingbird",
+        "author": "harper lee",
+        "genre": "classic",
         "year": 1960,
-        "Read_Status": "Read"
+        "read_status": "read"
     },
     {
-        "title": "The Great Gatsby",
-        "author": "F. Scott Fitzgerald",
-        "genre": "Literary Fiction",
+        "title": "the great gatsby",
+        "author": "f. scott fitzgerald",
+        "genre": "literary fiction",
         "year": 1925,
-        "Read_Status": "Unread"
+        "read_status": "unread"
     },
     {
-        "title": "Moby-Dick",
-        "author": "Herman Melville",
-        "genre": "Adventure",
+        "title": "moby-dick",
+        "author": "herman melville",
+        "genre": "adventure",
         "year": 1851,
-        "Read_Status": "Unread"
+        "read_status": "unread"
     },
     {
-        "title": "Harry Potter and the Sorcerer's Stone",
-        "author": "J.K. Rowling",
-        "genre": "Fantasy",
+        "title": "harry potter and the sorcerer's stone",
+        "author": "j.k. rowling",
+        "genre": "fantasy",
         "year": 1997,
-        "Read_Status": "Unread"
+        "read_status": "unread"
     },
     {
-        "title": "The Catcher in the Rye",
-        "author": "J.D. Salinger",
-        "genre": "Realistic Fiction",
+        "title": "the catcher in the rye",
+        "author": "j.d. salinger",
+        "genre": "realistic fiction",
         "year": 1951,
-        "Read_Status": "Read"
+        "read_status": "read"
     },
     {
-        "title": "Pride and Prejudice",
-        "author": "Jane Austen",
-        "genre": "Romance",
+        "title": "pride and prejudice",
+        "author": "jane austen",
+        "genre": "romance",
         "year": 1813,
-        "Read_Status": "Unread"
+        "read_status": "unread"
     },
     {
-        "title": "The Hobbit",
-        "author": "J.R.R. Tolkien",
-        "genre": "Fantasy",
+        "title": "the hobbit",
+        "author": "j.r.r. tolkien",
+        "genre": "fantasy",
         "year": 1937,
-        "Read_Status": "Read"
+        "read_status": "read"
     },
     {
-        "title": "Brave New World",
-        "author": "Aldous Huxley",
-        "genre": "Science Fiction",
+        "title": "brave new world",
+        "author": "aldous huxley",
+        "genre": "science fiction",
         "year": 1932,
-        "Read_Status": "Unread"
+        "read_status": "unread"
+    },
+    {
+        "title": "peer e kamil",
+        "author": "umera ahmed",
+        "genre": "novel",
+        "year": 2004,
+        "read_status": "unread"
     }
 ]
