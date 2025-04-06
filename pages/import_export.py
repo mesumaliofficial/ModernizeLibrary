@@ -74,11 +74,10 @@ def render_import_export():
             df = pd.DataFrame(json_data)
             
             buffer = io.BytesIO()
-            with pd.ExcelWriter(buffer, engine="openpyxl") as writer:
+            with pd.ExcelWriter(buffer, engine="xlsxwriter") as writer:
                 df.to_excel(writer, index=False, sheet_name="Library")
             buffer.seek(0)
 
-            # Provide the file for download using Streamlit's download button
             st.download_button(
                 label="Download Excel file",
                 data=buffer,
