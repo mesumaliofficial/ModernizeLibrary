@@ -75,5 +75,82 @@
         "genre": "novel",
         "year": 2004,
         "read_status": "unread"
+    },
+    {
+        "title": "the alchemist",
+        "author": "paulo coelho",
+        "genre": "adventure",
+        "year": 1988,
+        "read_status": "read"
+    },
+    {
+        "title": "1984",
+        "author": "george orwell",
+        "genre": "dystopian",
+        "year": 1949,
+        "read_status": "unread"
+    },
+    {
+        "title": "to kill a mockingbird",
+        "author": "harper lee",
+        "genre": "classic",
+        "year": 1960,
+        "read_status": "read"
+    },
+    {
+        "title": "the great gatsby",
+        "author": "f. scott fitzgerald",
+        "genre": "literary fiction",
+        "year": 1925,
+        "read_status": "unread"
+    },
+    {
+        "title": "moby-dick",
+        "author": "herman melville",
+        "genre": "adventure",
+        "year": 1851,
+        "read_status": "unread"
+    },
+    {
+        "title": "harry potter and the sorcerer's stone",
+        "author": "j.k. rowling",
+        "genre": "fantasy",
+        "year": 1997,
+        "read_status": "unread"
+    },
+    {
+        "title": "the catcher in the rye",
+        "author": "j.d. salinger",
+        "genre": "realistic fiction",
+        "year": 1951,
+        "read_status": "read"
+    },
+    {
+        "title": "pride and prejudice",
+        "author": "jane austen",
+        "genre": "romance",
+        "year": 1813,
+        "read_status": "unread"
+    },
+    {
+        "title": "the hobbit",
+        "author": "j.r.r. tolkien",
+        "genre": "fantasy",
+        "year": 1937,
+        "read_status": "read"
+    },
+    {
+        "title": "brave new world",
+        "author": "aldous huxley",
+        "genre": "science fiction",
+        "year": 1932,
+        "read_status": "unread"
+    },
+    {
+        "title": "peer e kamil",
+        "author": "umera ahmed",
+        "genre": "novel",
+        "year": 2004,
+        "read_status": "unread"
     }
 ]

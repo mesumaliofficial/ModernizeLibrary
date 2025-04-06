@@ -57,7 +57,7 @@ def render_import_export():
     st.title("Import/Export Data")
 
     # option choose
-    file_type = st.selectbox("Choose file type", ["CSV", "Excel"])
+    file_type = st.selectbox("Choose file type", ["CSV", "JSON"])
 
     if file_type == "CSV":
         df = upload_csv()
@@ -66,41 +66,35 @@ def render_import_export():
         df = upload_excel()
         
         # Export button
-    export_datas = st.selectbox("Export Data", ["Excel", "CSV"])
+    export_datas = st.selectbox("Export Data", ["CSV", "JSON"])
 
-    if export_datas == "Excel":
-        if st.button("Export to Excel"):
-            json_data = load_json_data()
-            df = pd.DataFrame(json_data)
-            
-            buffer = io.BytesIO()
-            with pd.ExcelWriter(buffer, engine="xlsxwriter") as writer:
-                df.to_excel(writer, index=False, sheet_name="Library")
-            buffer.seek(0)
-
-            st.download_button(
-                label="Download Excel file",
-                data=buffer,
-                file_name="library.xlsx",
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-            )
-            st.success("Data exported successfully!")
-
-    elif export_datas == "CSV":
+    if export_datas == "CSV":
         if st.button("Export to CSV"):
             json_data = load_json_data()
             df = pd.DataFrame(json_data)
             
-            # Saving to a CSV string buffer for download
             csv_buffer = io.StringIO()
             df.to_csv(csv_buffer, index=False)
             csv_buffer.seek(0)
 
-            # Provide the file for download using Streamlit's download button
             st.download_button(
                 label="Download CSV file",
                 data=csv_buffer.getvalue(),
                 file_name="library.csv",
                 mime="text/csv"
+            )
+            st.success("Data exported successfully!")
+
+    elif export_datas == "JSON":
+        if st.button("Export to JSON"):
+            json_data = load_json_data()
+            json_buffer = io.StringIO(json.dumps(json_data, indent=4))
+            json_buffer.seek(0)
+
+            st.download_button(
+                label="Download JSON file",
+                data=json_buffer.getvalue(),
+                file_name="library.json",
+                mime="application/json"
             )
             st.success("Data exported successfully!")
