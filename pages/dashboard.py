@@ -21,7 +21,7 @@ def render_dashboard():
 
     for book in library:
         total_books += 1
-        if book["Read_Status"] == "Read":
+        if book.get("Read_Status") == "Read":
             read_books += 1
         else: 
             unread_books += 1
