@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import json
 import io
+from openpyxl.workbook import Workbook
 
 library_file = "data/library.json"
 def load_json_data():
@@ -35,7 +36,7 @@ def upload_csv():
     return None
 
 def upload_excel():
-    upload_file = st.file_uploader("Upload CSV", type=["xlsx"])
+    upload_file = st.file_uploader("Upload Excel", type=["xlsx"])
     if upload_file is not None:
         df = pd.read_excel(upload_file)
         st.write("Excel Data Preview:")
